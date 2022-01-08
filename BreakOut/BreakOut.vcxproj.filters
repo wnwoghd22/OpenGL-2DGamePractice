@@ -19,6 +19,9 @@
     <Filter Include="리소스 파일\Shader">
       <UniqueIdentifier>{f059a0ca-bf60-49ea-a877-6a29cd36f02a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\Levels">
+      <UniqueIdentifier>{dbf464c6-d929-4ced-90bd-c2918e128b8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -37,6 +40,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="sprite_renderer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="game_object.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="game_level.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -62,6 +71,12 @@
     <ClCompile Include="sprite_renderer.cpp">
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
+    <ClCompile Include="game_object.cpp">
+      <Filter>소스 파일\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="game_level.cpp">
+      <Filter>소스 파일\Class</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader.vs">
@@ -69,6 +84,18 @@
     </None>
     <None Include="shader.fs">
       <Filter>리소스 파일\Shader</Filter>
+    </None>
+    <None Include="levels\one.lvl">
+      <Filter>리소스 파일\Levels</Filter>
+    </None>
+    <None Include="levels\two.lvl">
+      <Filter>리소스 파일\Levels</Filter>
+    </None>
+    <None Include="levels\three.lvl">
+      <Filter>리소스 파일\Levels</Filter>
+    </None>
+    <None Include="levels\four.lvl">
+      <Filter>리소스 파일\Levels</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
