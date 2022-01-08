@@ -8,6 +8,7 @@
 
 #include "sprite_renderer.h"
 #include "game_level.h"
+#include "ball_object.h"
 
 // Represents the current state of the game
 enum GameState {

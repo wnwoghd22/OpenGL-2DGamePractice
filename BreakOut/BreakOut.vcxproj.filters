@@ -48,6 +48,9 @@
     <ClInclude Include="game_level.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="ball_object.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="shader.cpp">
@@ -75,6 +78,9 @@
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
     <ClCompile Include="game_level.cpp">
+      <Filter>소스 파일\Class</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_object.cpp">
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
   </ItemGroup>
