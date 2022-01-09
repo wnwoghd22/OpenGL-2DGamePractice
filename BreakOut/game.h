@@ -36,8 +36,11 @@ public:
     void ProcessInput(float dt);
     void Update(float dt);
     void Render();
+    void DoCollisions();
 
 private:
     SpriteRenderer* Renderer;
+
+    bool CheckCollision(GameObject& one, GameObject& two);
 };
 #endif // !GAME_H
