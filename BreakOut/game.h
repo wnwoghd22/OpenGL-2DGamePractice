@@ -42,5 +42,6 @@ private:
     SpriteRenderer* Renderer;
 
     bool CheckCollision(GameObject& one, GameObject& two);
+    bool CheckCollision(BallObject& one, GameObject& two);
 };
 #endif // !GAME_H
