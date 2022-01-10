@@ -2,6 +2,7 @@
 #define GAME_H
 
 #include <vector>
+#include <tuple>
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -16,6 +17,15 @@ enum GameState {
     GAME_MENU,
     GAME_WIN
 };
+
+enum Direction {
+    UP,
+    RIGHT,
+    DOWN,
+    LEFT
+};
+
+typedef std::tuple<bool, Direction, glm::vec2> Collision;
 
 class Game
 {
@@ -42,6 +52,6 @@ private:
     SpriteRenderer* Renderer;
 
     bool CheckCollision(GameObject& one, GameObject& two);
-    bool CheckCollision(BallObject& one, GameObject& two);
+    Collision CheckCollision(BallObject& one, GameObject& two);
 };
 #endif // !GAME_H
