@@ -22,6 +22,12 @@
     <Filter Include="리소스 파일\Levels">
       <UniqueIdentifier>{dbf464c6-d929-4ced-90bd-c2918e128b8c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\Shader\Particle">
+      <UniqueIdentifier>{e3f7fa65-4410-4b2a-86ad-bdf149455b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Shader\Sprite">
+      <UniqueIdentifier>{f525d97b-6a2d-410b-9d93-65fb3d115039}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -49,6 +55,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="ball_object.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="particle_generator.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -83,14 +92,11 @@
     <ClCompile Include="ball_object.cpp">
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
+    <ClCompile Include="particle_generator.cpp">
+      <Filter>소스 파일\Class</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader.vs">
-      <Filter>리소스 파일\Shader</Filter>
-    </None>
-    <None Include="shader.fs">
-      <Filter>리소스 파일\Shader</Filter>
-    </None>
     <None Include="levels\one.lvl">
       <Filter>리소스 파일\Levels</Filter>
     </None>
@@ -102,6 +108,18 @@
     </None>
     <None Include="levels\four.lvl">
       <Filter>리소스 파일\Levels</Filter>
+    </None>
+    <None Include="shaders\particle.frag">
+      <Filter>리소스 파일\Shader\Particle</Filter>
+    </None>
+    <None Include="shaders\particle.vert">
+      <Filter>리소스 파일\Shader\Particle</Filter>
+    </None>
+    <None Include="shaders\sprite.frag">
+      <Filter>리소스 파일\Shader\Sprite</Filter>
+    </None>
+    <None Include="shaders\sprite.vert">
+      <Filter>리소스 파일\Shader\Sprite</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
