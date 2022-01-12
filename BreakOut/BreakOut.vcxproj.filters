@@ -28,6 +28,9 @@
     <Filter Include="리소스 파일\Shader\Sprite">
       <UniqueIdentifier>{f525d97b-6a2d-410b-9d93-65fb3d115039}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\Shader\PostProcess">
+      <UniqueIdentifier>{4d27bef2-4fd1-4d1d-ae9e-860faa44ada3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -58,6 +61,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="particle_generator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="post_processor.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -95,6 +101,9 @@
     <ClCompile Include="particle_generator.cpp">
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
+    <ClCompile Include="post_processor.cpp">
+      <Filter>소스 파일\Class</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="levels\one.lvl">
@@ -120,6 +129,12 @@
     </None>
     <None Include="shaders\sprite.vert">
       <Filter>리소스 파일\Shader\Sprite</Filter>
+    </None>
+    <None Include="shaders\postprocess.vert">
+      <Filter>리소스 파일\Shader\PostProcess</Filter>
+    </None>
+    <None Include="shaders\postprocess.frag">
+      <Filter>리소스 파일\Shader\PostProcess</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
