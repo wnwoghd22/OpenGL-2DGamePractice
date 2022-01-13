@@ -66,6 +66,9 @@
     <ClInclude Include="post_processor.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="power_up.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="shader.cpp">
