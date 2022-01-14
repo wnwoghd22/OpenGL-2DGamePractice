@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <irrKlang/irrKlang.h>
 
 #include "game.h"
 #include "resource_manager.h"
@@ -8,12 +9,16 @@
 #include "particle_generator.h"
 #include "post_processor.h"
 
+using namespace irrklang;
+
 // Game-related State data
 SpriteRenderer* Renderer;
 GameObject* Player;
 BallObject* Ball;
 ParticleGenerator* Particles;
 PostProcessor* Effects;
+
+ISoundEngine* SoundEngine = createIrrKlangDevice();
 
 float ShakeTime = 0.0f;
 
@@ -77,6 +82,8 @@ void Game::Init()
     Player = new GameObject(playerPos, PLAYER_SIZE, ResourceManager::GetTexture("paddle"));
     glm::vec2 ballPos = playerPos + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, -BALL_RADIUS * 2.0f);
     Ball = new BallObject(ballPos, BALL_RADIUS, INITIAL_BALL_VELOCITY, ResourceManager::GetTexture("face"));
+
+    SoundEngine->play2D("resources/audio/breakout.mp3", true);
 }
 
 void Game::Update(float dt)
